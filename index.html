@@ -3,70 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Website HenryPrep Migo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>The Hill Dog Park</title>
 </head>
 <body>
     <header>
-        <h1>The Hill's Dog Park News </h1>
-        <p>be informed about latest events and adventures</p>
-        <span>Map</span>
-        <span>The Park</span>
-        <span>Contact</span>
-     <div>
-        <img src="./dogparkmain.jpg">
-     </div>
-    </header>
-<hr />
-    <main>
-        <section>
-            <div>
-                <h2>Latest News</h2>
-                <p>El juguete de la Chola anda extraviado</p>
-                <p>Visto última vez el jueves en la salida nocturna</p>
-                <p>favor avisar o retener en el arbol</p>
-            </div>
- </section>
- <hr> 
-        <section>
-            <h2>No te pierda el Cumpleaños de Ronny</h2>
-            <p>Asistentes confirmados</p>
-            <ul>
-                <li>Ronny</li>
-                <li>Anya</li>
-                <li>Ema</li>
-                <li>Mani</li>
-                <li>Sami</li>
-            </ul>
+        <div class="header">
+            
+            <div id="headertext">
+                <h1>The Hill Dog Park News </h1>
+                
+                <img alt="cutedogbone" src="./dogbone.png">
+          
+                <p id="bajada">Entérate de todas las Aventuras en la Colina</p>
 
+                <a class="menu" href="./NotReady2.jpg" target="_blank">Map</a>
+                <a class="menu" href="./NotReady.jpg" target="_blank">The Dogs</a>
+                <a class="menu" href="./NotReady.jpg" target="_blank">Community</a>
+
+            </div>
+
+            <div id="headerimage">
+                <img src="./dogparkmain.jpg">
+            </div>
+
+        </div>
+    </header>
+
+<br><br>
+
+    <main>
+        <section id="sectionnews">
+            <div class="bodynews">
+                
+                <div class="sectiontitle" id="sectiontitlenews">
+                    <h2>Latest News</h2>
+                </div>
+                
+                <div class="new" id="latestnew">
+                     
+                        <p>El juguete de la Chola anda extraviado</p>
+                        <p>Visto última vez el jueves en la salida nocturna</p>
+                        <p>favor avisar o retener en el arbol</p>
+                
+                </div>
+            
+                <div class="othernews" id="othernews">
+
+                    <div class="oldernew">
+                        <p>Simona anda de viaje, visitando a sus abuelos.  Volverá en Febrero</p>
+                    </div>
+
+                    <div class="oldernew">
+                        <p>Mani perdió un pedacito de su oreja. Si lo ha visto avisar a nuestra taxidermista</p>
+                    </div>
+
+                    <div class="oldernew">
+                        <p>Nuevos amigos han llegado ! Sus nombres son Ronny y Molfán</p>
+                    </div>
+
+                </div>
+                            
+            </div>
+        </section>
+
+<br><br>
+
+        <section id="sectionevents">
+        <div class="bodyevent">
+
+            <div class="sectiontitle" id="eventtitle">
+              <h2>No te pierdas el Cumpleaños de Ronny</h2>
+              <img alt="boneseparator" src="./dogboneseparator.png">
+            </div>
+
+            <div class="evento" id="cumpleRonny">
+                  
+                <div id="evento1">
+                    <p>Asistentes confirmados</p>
+                    <ul>
+                        <li>Ronny</li>
+                        <li>Anya</li>
+                        <li>Ema</li>
+                        <li>Mani</li>
+                        <li>Sami</li>
+                    </ul>
+                </div>
+                
+                <div id="evento2">
+                    <p>Sábado 18</p>
+                    <p>En la Colina</p>
+                    <label id="confirma">
+                        <p>Confirma a nuestro Whatsapp</p>
+                        <a alt=wtsp-logo" target="_blank" href="./NotReady2.jpg">
+                        <img alt="logo whatsapp" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Whatsapp_logo_svg.png">
+                        </a>
+                    </label>
+                    
+                </div>
+                
+                <img alt="birthdaydog" id="birthdaydog" 
+                    src="https://doggydaycamp.com/images/easyblog_articles/4/screenshot-docs.google.com-2022.03.31-00_08_05.png">
+               
+            </div>
+        </div>  
         </section>
     
-<hr />
-      
+       <br><br>
+        
         <section>
-            <div>
-                <h2>This Month's Good Boys and Girls</h2>
-                <p> Los mejores portados del mes según votacion</p>
-                <ol>
-                    <li>Ema</li>
-                    <li>Sami</li>
-                    <li>Anya</li>
-                </ol>
+            <div id="sectionbestdog">
+                <div class="sectiontitle">
+                    <h2>This Month's Good Boys and Girls</h2>
+                </div>
+                    <div id="bestodogo">               
+                        <div id="bestotexto">
+
+                            <p> Los/as Mejores Portados del Mes Anterior según Votacion</p>
+                            <ol>
+                                <li>Emma</li>
+                                <li>Sami</li>
+                                <li>Anya</li>
+                            </ol>
+                        </div>
 
 
-                <form>
-                <label for="vote">Quien crees que el mejor perrito este mes?</label>
-                <input type="text" name="vote" placeholder="BestoDoggo">
-                <button>Vota</button>
-                </form>
+                    <img id=logo alt="logobestdog" src="./logoGoodGirls.png">
+                    
+                    <div id="votacion">
+                        
+                        <form>
+                            <label for="vote" id="votetitle">Quien fue el/la mejor Perrito/a este Mes?</label><br><br>
+                           <select name="vote" placeholder="BestoDoggo">
+                                <option value="" disabled selected hidden>BestoDoggo</option>
+                                <option value="Emma">Emma</option>
+                                <option value="Anya">Anya</option>
+                                <option value="Sami">Sami</option>
+                                <option value="Mani">Mani</option>
+                                <option value="Titán">Titán</option>
+                           </select>
+                           <br><br><button id="vote">Vota</button>
+                            </form>
+                        </div>
 
+
+
+                     </div>
+
+
+                
+                    
             </div>
             </section>
-            <hr>
 
     </main>
     <footer>
-        <p>Esto lo aprendí gracias a <a href="https://www.soyhenry.com/">soyHenry.com</a></p>
-        <p>Migo© 'Jan24</p>
+        <div class="footer">
+            <p>Esto lo aprendí gracias a <a href="https://www.soyhenry.com/" target="_blank">soyHenry.com</a></p>
+            <p>Migo© 'Jan24</p>
+        </div>
     </footer>
 </body>
 </html>
